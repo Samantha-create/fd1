@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chess board 64</title>
+    <style>
+        body {
+            margin 0;
+        }
+        body>div {
+            width: 100vmin;
+            height: 100vmin;
+            outline: 1px solid blue;
+            font-size: 0vmin;
+        }
+        body>div>div {
+            width: 10vmin;
+            height: 10vmin;
+            outline: 1px solid blue;
+            display: inline-block;
+            position: relative;
+        }
+        body>div::before, body>div::after {
+            display: block;
+            content:"abcdefgh";
+            height: 10vmin;
+            margin-left: 14vmin;
+            letter-spacing: 8.2vmin;
+            font-size: 4vmin;
+            line-height: 10vmin;
+        }
+        body>div>div:nth-child(8n)::after, body>div>div:nth-child(8n+1)::before {
+            display: inline-block;
+            content:"";
+            width: 10vmin;
+            height: 10vmin;
+            outline: 1px solid rgb(81, 109, 17);
+            background-color: chartreuse;
+            position: absolute;
+        }
+        body>div>div:nth-child(even) {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+</body>
+</html>

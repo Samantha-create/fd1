@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .cell {
+            outline: 1px solid black;
+            height: calc(100vmin / 8);
+            width: calc(100vmin / 8);
+            float: left;
+        }
+        .light-cell {
+            background-color: yellow;
+        }
+        .dark-cell {
+            background-color: brown;
+        }
+        .row-even{float: left; width: 100vmin;}
+        .row-odd{float: left; width: 100vmin;}
+
+        .cell2 {
+            outline: 1px solid black;
+            height: calc(100vmin / 8);
+            width: calc(100vmin / 8);
+        }
+        .light-cell2 {
+            background-color: yellow;
+        }
+        .dark-cell2 {
+            background-color: brown;
+        }
+        .row-even2 {float: left;}
+        .row-odd2 {float: left;}
+
+        .image { 
+            outline: 1px solid transparent; 
+            width: calc(100vmin / 8); 
+            height: calc(100vmin / 8);
+            background-image: url(https://files.slack.com/files-pri/T010D3N0094-F011XJRKC9X/image.png); 
+            background-size: 60vmin 20vmin;
+            background-repeat: no-repeat;
+            background-position-y: 2vmin;
+        }
+        </style>
+</head>
+<body>
+        <div style="width: 100vmin; height: 100vmin;">
+        <div class="row-odd">
+            <div class="cell light-cell image"  style="background-position-x: calc(-60vmin / 6 * 2 + 7px);"></div><div class="cell dark-cell image" style="background-position-x: calc(-60vmin / 6 * 4 + 1px);"></div><div class="cell light-cell image" style="background-position-x: calc(-60vmin / 6 * 3 + 4px);"></div><div class="cell dark-cell image" style="background-position-x: calc(-60vmin / 6 * 1 + 12px);"></div><div class="cell light-cell image" style=" background-position-x: 20px;"></div><div class="cell dark-cell image" style="background-position-x: calc(-60vmin / 6 * 3 + 4px);"></div><div class="cell light-cell image" style="background-position-x: calc(-60vmin / 6 * 4);"></div><div class="cell dark-cell image" style="background-position-x: calc(-60vmin / 6 * 2 + 7px);"></div>
+        </div>
+        <div class="row-even">
+            <div class="cell dark-cell image" style="background-position-x: calc(-60vmin / 6 * 5 - 4px);"></div><div class="cell light-cell image" style="background-position-x: calc(-60vmin / 6 * 5 - 4px);"></div><div class="cell dark-cell image" style="background-position-x: calc(-60vmin / 6 * 5 - 4px);"></div><div class="cell light-cell image" style="background-position-x: calc(-60vmin / 6 * 5 - 4px);"></div><div class="cell dark-cell image" style="background-position-x: calc(-60vmin / 6 * 5 - 4px);"></div><div class="cell light-cell image" style="background-position-x: calc(-60vmin / 6 * 5 - 4px);"></div><div class="cell dark-cell image" style="background-position-x: calc(-60vmin / 6 * 5 - 4px);"></div><div class="cell light-cell image" style="background-position-x: calc(-60vmin / 6 * 5 - 4px);"></div>
+        </div>
+        <div class="row-odd">
+            <div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div>
+        </div>
+        <div class="row-even">
+            <div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div>
+        </div>
+        <div class="row-odd">
+            <div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div>
+        </div>
+        <div class="row-even">
+            <div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div><div class="cell dark-cell"></div><div class="cell light-cell"></div>
+        </div>
+        <div class="row-odd">
+            <div class="cell light-cell image" style="background-position: calc(-60vmin / 6 * 5 - 4px) -10vmin;"></div><div class="cell dark-cell image" style="background-position: calc(-60vmin / 6 * 5 - 4px) -10vmin;"></div><div class="cell light-cell image" style="background-position: calc(-60vmin / 6 * 5 - 4px) -10vmin;"></div><div class="cell dark-cell image" style="background-position: calc(-60vmin / 6 * 5 - 4px) -10vmin;"></div><div class="cell light-cell image" style="background-position: calc(-60vmin / 6 * 5 - 4px) -10vmin;"></div><div class="cell dark-cell image" style="background-position: calc(-60vmin / 6 * 5 - 4px) -10vmin;"></div><div class="cell light-cell image" style="background-position: calc(-60vmin / 6 * 5 - 4px) -10vmin;"></div><div class="cell dark-cell image" style="background-position: calc(-60vmin / 6 * 5 - 4px) -10vmin;"></div>
+        </div>
+        <div class="row-even">
+            <div class="cell dark-cell image" style="background-position-x: calc(-60vmin / 6 * 2 + 7px);"></div><div class="cell light-cell image" style="background-position-x: calc(-60vmin / 6 * 4 + 1px);"></div><div class="cell dark-cell image" style="background-position-x: calc(-60vmin / 6 * 3 + 4px);"></div><div class="cell light-cell image" style="background-position-x: calc(-60vmin / 6 * 1 + 12px);"></div><div class="cell dark-cell image" style="background-position-x: 20px;"></div><div class="cell light-cell image" style="background-position-x: calc(-60vmin / 6 * 3 + 4px);"></div><div class="cell dark-cell image" style="background-position-x: calc(-60vmin / 6 * 4);"></div><div class="cell light-cell image" style="background-position-x: calc(-60vmin / 6 * 2 + 7px);"></div>
+        </div>
+    </div>
+
+
+    <div style="width: 100vmin; height: 100vmin; margin-top: 100px;">
+        <div class="row-odd2">
+            <div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div>
+        </div>
+        <div class="row-even2">
+            <div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div>
+        </div>
+        <div class="row-odd2">
+            <div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div>
+        </div>
+        <div class="row-even2">
+            <div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div>
+        </div>
+        <div class="row-odd2">
+            <div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div>
+        </div>
+        <div class="row-even2">
+            <div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div>
+        </div>
+        <div class="row-odd2">
+            <div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div>
+        </div>
+        <div class="row-even2">
+            <div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div><div class="cell2 dark-cell2"></div><div class="cell2 light-cell2"></div>
+        </div>
+    </div>
+      
+</body>
+</html>
